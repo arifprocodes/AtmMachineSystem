@@ -1,6 +1,6 @@
 public class ATM {
     private double balance;
-    private double dipositAmount;
+    private double depositAmount;
     private double withdrawAmount;
 
     public ATM(){
@@ -15,12 +15,12 @@ public class ATM {
         this.balance = balance;
     }
 
-    public double getDipositAmount() {
-        return dipositAmount;
+    public double getDepositAmount() {
+        return depositAmount;
     }
 
     public void setDipositAmount(double dipositAmount) {
-        this.dipositAmount = dipositAmount;
+        this.depositAmount = dipositAmount;
     }
 
     public double getWithdrawAmount() {

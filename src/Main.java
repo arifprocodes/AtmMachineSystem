@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-
+        AtmMachineOperation op = new AtmMachineOperationImplements();
         int accountNumber=123;
         int accuntPin=123;
         Scanner in = new Scanner(System.in);
@@ -16,13 +16,17 @@ public class Main {
                 System.out.println("Enter choice : ");
                 int ch=in.nextInt();
                 if(ch==1){
-                    
+                    op.viewBalance();
                 } else if (ch==2) {
-                    
+                    System.out.println("Enter amount to withdraw : ");
+                    double withdrawAmount = in.nextDouble();
+                    op.withdrawAmount(withdrawAmount);
                 } else if (ch==3) {
-                    
+                    System.out.println("Enter Deposit Amount : ");
+                    double depositAmount=in.nextDouble();
+                    op.depositAmount(depositAmount);
                 } else if (ch==4) {
-                    
+                    op.viewStatement();
                 } else if (ch==5) {
                     System.out.println("Collect your card\nThank you for using ATM Machine");
                     System.exit(0);
